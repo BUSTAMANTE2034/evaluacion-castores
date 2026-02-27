@@ -1,0 +1,17 @@
+meta {
+  name: ver movimientos
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{URL}}/movimientos?tipo=SALIDA
+  body: none
+  auth: inherit
+}
+
+params:query {
+  tipo: SALIDA
+  ~per_page: 1
+  ~page: 4
+}

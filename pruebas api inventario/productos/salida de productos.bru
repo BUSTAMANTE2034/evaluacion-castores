@@ -1,0 +1,17 @@
+meta {
+  name: salida de productos
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{URL}}/productos/2/salida
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "cantidad": 14
+  }
+}

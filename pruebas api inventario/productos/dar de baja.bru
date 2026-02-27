@@ -1,0 +1,17 @@
+meta {
+  name: dar de baja
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{URL}}/productos/2/baja
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "cantidad": 2
+  }
+}

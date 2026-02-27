@@ -1,0 +1,18 @@
+meta {
+  name: crear producto
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{URL}}/productos
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nombre": "MOUSE",
+    "precio": 100
+  }
+}

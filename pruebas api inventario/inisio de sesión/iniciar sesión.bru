@@ -1,0 +1,22 @@
+meta {
+  name: iniciar sesión
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL}}/auth/login
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "correo": "administrador@yopmail.com",
+    "contrasena": "Password1@"
+  }
+}

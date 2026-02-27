@@ -1,0 +1,17 @@
+meta {
+  name: dar de alta
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{URL}}/productos/2/reactivar
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "cantidad": 2
+  }
+}
